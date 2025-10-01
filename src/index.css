@@ -239,10 +239,6 @@ left: 19px;
   margin: 0 auto;
   margin-top: 10px;
 }
-/* .dxt-bottom{
-  position: relative;
-  left: 30px;
-} */
 .reviews {
   display: flex;
   gap: 32px;
@@ -473,6 +469,7 @@ left: 19px;
   position: relative;
   top: 9.3rem;
   left: 0rem;
+
 }
 .title {
   display: flex;
@@ -508,7 +505,6 @@ color: #616161;
   position:relative;
   left: 1.9%;
 }
-
 .subpart hr {
   margin: 18px 0 0 0;
   border: none;
@@ -531,6 +527,7 @@ color: #616161;
   margin: 0;
   font-weight: 400;
   color:#616161;
+  cursor: pointer;
 }
 
 .footer p:last-child {
