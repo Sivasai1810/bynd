@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Faqs from "../assets/faq.png"
-import Bigplus from "../assets/bigplus.png"
-import Bigminus from "../assets/bignimus.png"
+import Faqs from "../assets/faqlogo.svg"
+import Bigplus from "../assets/faqplus.svg"
+import Bigminus from "../assets/faqminus.svg"
 import '../FAQ/faqq.css'
 
 const Faaq = () => {
@@ -39,16 +39,16 @@ const Faaq = () => {
         <div className="faq-list">
           {questions.map((item, index) => (
             <div className="faq-question-row" key={index}>
-              <div
-                className="faq-question"
-                onClick={() => setShowanswer(showanswer === index ? null : index)}
-              >
-                <span>{item.question}</span>
-                <img
-                  src={showanswer === index ? Bigminus : Bigplus}
-                  alt="toggle"
-                />
-              </div>
+             <div
+  className={`faq-question${showanswer === index ? " selected" : ""}`}
+  onClick={() => setShowanswer(showanswer === index ? null : index)}
+>
+  <span>{item.question}</span>
+  <img
+    src={showanswer === index ? Bigminus : Bigplus}
+    alt="toggle"
+  />
+</div>
               {showanswer === index && (
                 <div className="faq-answer">
                   {item.answer}

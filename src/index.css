@@ -43,7 +43,10 @@ body {
   margin: 0 16px;
   gap: 32px;
 }
-
+.navbar ul:first-of-type {
+  position: relative;
+  left: 78px; 
+}
 .navbar ul:last-of-type {
   gap: 18px;
 }
@@ -145,7 +148,6 @@ background: #FAFAFB;
     0 1px 4px 0 rgba(20, 20, 20, 0.07),
     0 0.5px 2px 0 rgba(20, 20, 20, 0.04),
     0 0 0 1px rgba(20, 20, 20, 0.06) inset;
-  padding: 28px 28px 22px 28px;
   min-width: 320px;
   max-width: 420px;
   margin-left: 18px;
@@ -154,6 +156,9 @@ background: #FAFAFB;
   text-align: left;
   border: 1px solid #f3f4f6;
   display: inline-block;
+   transition: transform 0.3s ease, 
+              box-shadow 0.3s ease, 
+              border-color 0.3s ease;
 }
 
 .track img {
@@ -161,6 +166,13 @@ background: #FAFAFB;
   height: 32px;
   margin-bottom: 10px;
 }
+.track:hover{
+  border: 1px solid #22c55e;       
+  box-shadow: 0 2px 6px rgba(34, 197, 94, 0.15); 
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
 
 .track h6 {
   font-size: 1.25rem;
@@ -185,13 +197,16 @@ background: #FAFAFB;
     0 0.5px 2px 0 rgba(20, 20, 20, 0.04),
     0 0 0 1px rgba(20, 20, 20, 0.06) inset;
   border: 1px solid #f3f4f6;
-  padding: 3px 18px 32px 18px;
+  padding: 30px 18px 32px 18px;
   max-width: 375px;
   margin: 32px auto 0 auto;
   text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  transition: transform 0.3s ease, 
+              box-shadow 0.3s ease, 
+              border-color 0.3s ease;
   
 }
 
@@ -201,18 +216,18 @@ background: #FAFAFB;
   font-weight: 700;
   margin: 0 1px 1px 0;
   letter-spacing: -1px;
- font-family:Clash Grotesk.
+ font-family: Clash Grotesk;
 }
 .works{
    display: flex;       
 position: relative;
 left: 19px;
-  margin-bottom: 20px; 
+margin-bottom: 20px; 
+gap: 16px;
 }
 .dxt-bottom{
   position: relative;
-  left: 10px;
-
+  left: 9.9px;
 }
 .working h4 {
   color: #134e4a;
@@ -389,88 +404,6 @@ left: 19px;
   font-weight: 500;
   text-align: center;
 }
-.faq-section {
-  background: #fff;
-  border-radius: 16px;
-  padding: 48px 32px;
-  margin: 40px auto;
-  max-width: 1100px;
-}
-
-.faq {
-  display: flex;
-  align-items: flex-start;
-  gap: 48px;
-}
-
-.faq-visual {
-  min-width: 260px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.faq-visual h2 {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #222;
-  margin: 0 0 18px 0;
-  line-height: 1.1;
-}
-
-.faq-visual h2 span {
-  color: #22c55e;
-  font-weight: 700;
-}
-
-.faq-visual img {
-  width: 120px;
-  height: auto;
-  margin-top: 18px;
-}
-
-.faq-list {
-  flex: 1;
-  min-width: 320px;
-}
-
-.faq-question-row {
-  border-bottom: 1px solid #f3f4f6;
-  padding: 18px 0;
-}
-
-.faq-question {
-  font-size: 1.08rem;
-  font-weight: 600;
-  color: #222;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: background 0.15s;
-}
-
-.faq-question img {
-  width: 22px;
-  height: 22px;
-  margin-left: 12px;
-  vertical-align: middle;
-}
-
-.faq-answer {
-  font-size: 1rem;
-  
-  margin-top: 8px;
-  font-weight: 400;
-  line-height: 1.5;
-  transition: all 0.2s;
-}
-.faqimg{
-  position: relative;
-  top: 9.3rem;
-  left: 0rem;
-
-}
 .title {
   display: flex;
   flex-direction: column;
@@ -483,6 +416,7 @@ left: 19px;
   width: 184px;
   height: auto;
   margin-bottom: -8px;
+  padding-left: 20px;
 }
 
 .title p {
@@ -504,6 +438,7 @@ color: #616161;
 .footers{
   position:relative;
   left: 1.9%;
+  margin-top: 90px;
 }
 .subpart hr {
   margin: 18px 0 0 0;
@@ -547,7 +482,6 @@ color: #616161;
   display: block;
 } */
 .freetier, .protier { 
-  min-width: 584px;
   max-width: 384px;
   min-height: 520px;
   height: 520px;
@@ -571,22 +505,6 @@ color: #616161;
     margin-top: 10px;
   }
 }
-@media (max-width: 900px) {
-  .faq {
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-  }
-  .faq-visual {
-    align-items: center;
-    min-width: 0;
-  }
-  .faq-list {
-    min-width: 0;
-    width: 100%;
-  }
-}
-
 @media (max-width: 900px) {
   .plans {
     flex-direction: column;

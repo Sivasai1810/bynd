@@ -1,5 +1,5 @@
 import React from 'react'
-import Bynd from "../assets/BYND.png"
+import Bynd from "../assets/byndlogo.svg"
 const Footer = () => {
   return (
     <div className='footers'>
