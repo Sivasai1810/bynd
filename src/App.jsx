@@ -78,7 +78,7 @@ function App() {
    <div className='hero-section'>
      <div className='hero-content'>
        <h1 className='hero-title'>
-         Know when your <span className='highlight'>design</span> gets noticed
+         Know when your<br></br> <span className='highlight'>design</span> gets noticed
        </h1>
        <p className='hero-subtitle'>
          Track views, time spent, and recruiter engagement on every design assignment you send — so you never submit blind again.

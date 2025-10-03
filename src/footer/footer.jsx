@@ -8,7 +8,7 @@ const Footer = () => {
         <p>byndhq@gmail.com</p>
     </div>
     <div className='subpart'>
-   <p>BYND is in its early stages. We'd love your feedback or suggestions — email us at byndhq@gmail.com or reach out to the founder directly on twitter</p>
+   <p>BYND is in its early stages. We'd love your feedback or suggestions — email us at byndhq@gmail.com or reach out to the founder directly on <a href="https://x.com/uxayaan">twitter</a></p>
    <hr></hr>
     </div>
     <div className='footer'>
