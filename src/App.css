@@ -1462,6 +1462,13 @@ body {
 
 .pro-tier {
   border-color: #e5e7eb;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pro-tier:hover {
+  border-color: #22c55e;
+  box-shadow: none;
 }
 
 .best-value-badge {
@@ -1605,6 +1612,7 @@ body {
   box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
 }
 
+
 .pricing-cta-button img {
   width: 16px;
   height: 16px;
@@ -1704,8 +1712,14 @@ body {
   }
   
   .pro-tier {
-
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
     border-width: 2px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pro-tier:hover {
+    border-color: #22c55e;
+    box-shadow: none;
   }
   
   .best-value-badge {
@@ -1761,6 +1775,12 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: calc(100% - 40px);
+    margin-top: 20px;
+  }
+  
+  /* Add extra spacing for the last feature item in pro tier on mobile */
+  .pro-tier .plan-features .feature-item:last-of-type {
+    margin-bottom: -100px;
   }
   
   .feature-icon {
@@ -1802,6 +1822,16 @@ body {
     padding: 28px 24px;
     min-height: 350px;
     border-radius: 10px;
+  }
+  
+  .pro-tier {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pro-tier:hover {
+    border-color: #22c55e;
+    box-shadow: none;
   }
   
   .best-value-badge {
@@ -1855,6 +1885,11 @@ body {
     padding-right: 24px;
   }
   
+  /* Add extra spacing for the last feature item in pro tier on small mobile */
+  .pro-tier .plan-features .feature-item:last-of-type {
+    margin-bottom: 50px;
+  }
+  
   .feature-icon {
     width: 16px;
     height: 16px;
@@ -1891,6 +1926,16 @@ body {
     min-height: 320px;
   }
   
+  .pro-tier {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pro-tier:hover {
+    border-color: #22c55e;
+    box-shadow: none;
+  }
+  
   .plan-name {
     font-size: 13px;
   }
@@ -1917,6 +1962,11 @@ body {
     margin-right: -20px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  
+  /* Add extra spacing for the last feature item in pro tier on extra small mobile */
+  .pro-tier .plan-features .feature-item:last-of-type {
+    margin-bottom: 45px;
   }
   
   .feature-icon {
