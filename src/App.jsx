@@ -180,7 +180,7 @@ function App() {
     <div className='steps-grid'>
       <div className='step-card'>
         <div className='step-number'>01</div>
-        <h3 className='step-title'>UPLOAD YOUR <br></br>ASSIGNMENT</h3>
+        <h3 className='step-title'>UPLOAD YOUR ASSIGNMENT</h3>
         <p className='step-description'>
           Just paste your Figma, PDF, or assignment link—simple, fast, and secure sharing.
         </p>
@@ -191,7 +191,7 @@ function App() {
       
       <div className='step-card'>
         <div className='step-number'>02</div>
-        <h3 className='step-title'>SHARE BYND <br></br>LINK</h3>
+        <h3 className='step-title'>SHARE BYND LINK</h3>
         <p className='step-description'>
           Your BYND link is unique, secure, and view-tracked. Just copy and share it with the recruiter.
         </p>
@@ -202,7 +202,7 @@ function App() {
       
       <div className='step-card'>
         <div className='step-number'>03</div>
-        <h3 className='step-title'>TRACK VIEWS <br></br>INSTANTLY</h3>
+        <h3 className='step-title'>TRACK VIEWS  INSTANTLY</h3>
         <p className='step-description'>
           See if your assignment was viewed, when it was opened, and how many times—all from your BYND Dashboard.
         </p>
