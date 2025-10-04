@@ -307,7 +307,7 @@ function App() {
         <div className='plan-features'>
           <div className='feature-item'>
             <img src={Correct} alt='Check' className='feature-icon' />
-            <span className='feature-text'>3 Assignment Submissions</span>
+            <span className='assignment-text'>3 Assignment Submissions</span>
           </div>
           <div className='feature-item'>
             <img src={Correct} alt='Check' className='feature-icon' />
@@ -362,7 +362,7 @@ function App() {
             <span className='feature-text'>Smart tracking links</span>
           </div>
           <div className='feature-item'>
-            <span className='feature-texts'>No credit card required</span>
+            <span className='feature-textss'>No credit card required</span>
           </div>
         </div>
       </div>

@@ -1408,10 +1408,10 @@ body {
   }
 }
 
-/* Pricing Section Styles */
+/* Pricing Section Styles - Exact Design Match */
 .pricing-section {
   background-color: #ffffff;
-  padding: 80px 20px;
+  padding: 40px 20px 80px;
   position: relative;
 }
 
@@ -1422,115 +1422,106 @@ body {
 
 .pricing-header {
   text-align: left;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .pricing-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #212529;
+  font-size: 32px;
+  font-weight: 600;
+  color: #1a1a1a;
   margin-bottom: 0;
-  line-height: 1.2;
-  letter-spacing: -0.02em;
+  line-height: 1.3;
+  letter-spacing: -0.01em;
 }
 
 .pricing-title .highlight {
-  color: #28a745;
+  color: #22c55e;
 }
 
 .pricing-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px 32px;
-  margin-bottom: 60px;
+  gap: 24px;
+  margin-bottom: 40px;
 }
 
 .pricing-card {
   background-color: #ffffff;
-  border: 1px solid #e9ecef;
-  border-radius: 12px;
-  padding: 32px 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 40px 32px;
   text-align: left;
-  transition: all 0.3s ease;
-  box-shadow: none;
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 100%;
-}
-
-.pricing-card:hover {
-  transform: translateY(-4px);
-  box-shadow: none;
-  border-color: #28a745;
+  width: 588px;
+  height: 527px;
+  min-height: 527px;
+  overflow: hidden;
 }
 
 .pro-tier {
-  box-shadow: 0 4px 16px rgba(40, 167, 69, 0.1);
-}
-
-.pro-tier:hover {
-  box-shadow: none;
+  border-color: #e5e7eb;
 }
 
 .best-value-badge {
   position: absolute;
   top: 32px;
   right: 32px;
-  background-color: #007bff;
+  background: #0D78F2;
   color: #ffffff;
-  padding: 6px 16px;
+  padding: 8px 16px;
   border-radius: 10px;
-  font-size: 0.75rem;
+  font-size: 15.36px;
   font-weight: 600;
-  text-transform: capitalize;
-  letter-spacing: 0.5px;
+  text-transform: none;
+  letter-spacing: 0;
+
 }
 
 .pricing-card-header {
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   text-align: left;
   position: relative;
 }
 
 .plan-name {
-  font-size: 1.5rem;
+  font-size: 20.48px;
   font-weight: 700;
-  color: #212529;
-  margin-bottom: 16px;
-  line-height: 1.3;
+  color: #374151;
+  margin-bottom: 8px;
+  line-height: 1.4;
 }
 
 .plan-price {
   display: flex;
   align-items: baseline;
   justify-content: flex-start;
-  gap: 8px;
+  gap: 4px;
+  margin-bottom: 4px;
 }
 
 .price-amount {
-  font-size: 3rem;
+  font-size: 46.08px;
   font-weight: 700;
-  color: #212529;
+  color: #111827;
   line-height: 1;
 }
 
 .price-period {
   font-size: 20.48px;
-  color: #000000;
+  color: #121417;
   font-weight: 400;
-  font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  margin-left: 2px;
 }
 
 .plan-features {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  gap: 16px;
-}
-
-.plan-features .feature-item:first-child {
-  margin-bottom: 8px;
+  gap: 12px;
+  margin-top: 8px;
+  overflow: hidden;
 }
 
 .feature-item {
@@ -1540,66 +1531,72 @@ body {
 }
 
 .feature-icon {
-  width: 16px;
-  height: 16px;
-  object-fit: contain;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 1px;
 }
 
-.feature-text {
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.feature-text, .assignment-text {
   font-size: 16.64px;
-  color: #000000;
+  color: #121417;
   line-height: 1.5;
   font-weight: 400;
   text-align: left;
   width: 100%;
-  font-family: 'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
-}
-.feature-texts {
-  position: relative;
-  top: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  width: 100%;
-  max-width: none;
-  white-space: nowrap;
 }
 
-.feature-item span:not(.feature-text) {
-  font-size: 0.95rem;
-  color: #495057;
+.feature-textss {
+  font-size: 14px;
+  color: #61738A;
   line-height: 1.5;
   font-weight: 400;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 64px);
+  padding-top: 15px;
+  font-family:'Circular Std', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+/* Specific styling for pro-tier feature spacing */
+.pro-tier .plan-features .feature-item:first-child {
+  margin-bottom: 5px;
 }
 
 .pricing-footer {
   text-align: center;
-  margin-top: 40px;
+  margin-top: 32px;
 }
 
 .billing-info {
-  font-size: 0.9rem;
-  color: #6c757d;
+  font-size: 14px;
+  color: #6b7280;
   margin-bottom: 24px;
   font-weight: 400;
 }
 
 .pricing-cta-button {
-  background-color: #28a745;
+  background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
   color: #ffffff;
   border: none;
-  border-radius: 8px;
-  padding: 16px 32px;
-  font-size: 1.125rem;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(40, 167, 69, 0.2);
+  transition: all 0.2s ease;
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
 }
 
 .pricing-cta-button:hover {
@@ -1617,160 +1614,162 @@ body {
 /* Responsive Design for Pricing Section */
 
 /* Large Desktop */
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1200px) {
   .pricing-section {
-    padding: 100px 20px;
+    padding: 80px 20px 100px;
   }
   
   .pricing-title {
-    font-size: 3rem;
+    font-size: 36px;
   }
   
   .pricing-grid {
-    gap: 48px 40px;
-    margin-bottom: 80px;
+    gap: 32px;
+    margin-bottom: 48px;
   }
   
   .pricing-card {
-    padding: 40px 32px;
+    padding: 48px 40px;
+    min-height: 500px;
   }
   
-  .pricing-card-header {
-    margin-bottom: 40px;
-  }
-  
-  .plan-name {
-    font-size: 1.75rem;
-  }
-  
-  .price-amount {
-    font-size: 3.5rem;
-  }
-  
-  .feature-item span,
-  .feature-text,
   .feature-texts {
-    font-size: 1rem;
+    margin-left: -40px;
+    margin-right: -40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 24px;
+    padding-bottom: 10px;
   }
 }
 
 /* Desktop */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) and (min-width: 769px) {
   .pricing-section {
-    padding: 70px 20px;
+    padding: 60px 20px 80px;
   }
   
   .pricing-title {
-    font-size: 2.25rem;
-  }
-  
-  .pricing-grid {
-    gap: 36px 28px;
-    margin-bottom: 50px;
-  }
-  
-  .pricing-card {
-    padding: 28px 20px;
-  }
-  
-  .pricing-card-header {
-    margin-bottom: 28px;
-  }
-  
-  .price-amount {
-    font-size: 2.5rem;
-  }
-}
-
-/* Tablet Styles */
-@media screen and (max-width: 1024px) {
-  .pricing-section {
-    padding: 60px 20px;
-  }
-  
-  .pricing-header {
-    margin-bottom: 50px;
-  }
-  
-  .pricing-title {
-    font-size: 2rem;
-  }
-  
-  .pricing-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
-    margin-bottom: 50px;
-  }
-  
-  .pricing-card {
-    padding: 32px 24px;
-    text-align: left;
-  }
-  
-  .pricing-card-header {
-    margin-bottom: 32px;
-  }
-  
-  .plan-name {
-    font-size: 1.375rem;
-  }
-  
-  .price-amount {
-    font-size: 2.5rem;
-  }
-  
-  .feature-texts {
-    max-width: none;
-    top: 8px;
-    white-space: nowrap;
-  }
-}
-
-/* Mobile Styles */
-@media screen and (max-width: 768px) {
-  .pricing-section {
-    padding: 50px 16px;
-  }
-  
-  .pricing-header {
-    margin-bottom: 40px;
-  }
-  
-  .pricing-title {
-    font-size: 1.75rem;
-    margin-bottom: 12px;
+    font-size: 32px;
   }
   
   .pricing-grid {
     gap: 24px;
-    margin-bottom: 40px;
+  }
+  
+  .pricing-card {
+    padding: 40px 32px;
+    min-height: 450px;
+  }
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 768px) {
+  .pricing-section {
+    padding: 50px 16px 60px;
+  }
+
+  
+  .pricing-container {
+    max-width: 100%;
+  }
+  
+  .pricing-header {
+    margin-bottom: 32px;
+    text-align: left;
+  }
+  
+  .pricing-title {
+    font-size: 28px;
+    text-align: left;
+  }
+  
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 32px;
   }
   
   .pricing-card {
     padding: 24px 20px;
+    min-height: auto;
+    border-radius: 12px;
+    width: 100%;
+    max-width: none;
+    height: auto;
+  }
+  
+  .free-tier {
+    padding-bottom: 236px;
+  }
+  
+  .pro-tier {
+
+    border-width: 2px;
+  }
+  
+  .best-value-badge {
+    top: 16px;
+    right: 16px;
+    padding: 6px 12px;
+    font-size: 12px;
+    background: #0ea5e9;
+    border-radius: 6px;
   }
   
   .pricing-card-header {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
   }
   
   .plan-name {
-    font-size: 1.25rem;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
   }
   
   .price-amount {
-    font-size: 2rem;
+    font-size: 36px;
+    font-weight: 700;
   }
   
-  .feature-item span,
-  .feature-text {
-    font-size: 16.64px;
+  .price-period {
+    font-size: 16px;
   }
   
-  .feature-texts {
-    max-width: none;
-    top: 6px;
-    white-space: nowrap;
+  .plan-features {
+    gap: 12px;
+    margin-top: 16px;
+  }
+  
+  .feature-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .feature-text, .assignment-text {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .feature-textss {
+    font-size: 14px;
+    color: #6b7280;
+    text-align: center;
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+  }
+  
+  .feature-icon {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .pricing-footer {
+    margin-top: 28px;
   }
   
   .pricing-cta-button {
@@ -1779,68 +1778,10 @@ body {
   }
 }
 
-/* Small Mobile Styles */
+/* Mobile Styles */
 @media screen and (max-width: 480px) {
   .pricing-section {
-    padding: 40px 12px;
-  }
-  
-  .pricing-header {
-    margin-bottom: 32px;
-  }
-  
-  .pricing-title {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .pricing-grid {
-    gap: 20px;
-    margin-bottom: 32px;
-  }
-  
-  .pricing-card {
-    padding: 20px 16px;
-  }
-  
-  .pricing-card-header {
-    margin-bottom: 20px;
-  }
-  
-  .plan-name {
-    font-size: 1.125rem;
-  }
-  
-  .price-amount {
-    font-size: 1.75rem;
-  }
-  
-  .feature-item span,
-  .feature-text {
-    font-size: 15px;
-  }
-  
-  .feature-texts {
-    max-width: none;
-    top: 4px;
-    white-space: nowrap;
-  }
-  
-  .pricing-cta-button {
-    padding: 12px 24px;
-    font-size: 0.9rem;
-  }
-  
-  .pricing-cta-button img {
-    width: 14px;
-    height: 14px;
-  }
-}
-
-/* Extra Small Mobile */
-@media screen and (max-width: 360px) {
-  .pricing-section {
-    padding: 30px 8px;
+    padding: 40px 12px 50px;
   }
   
   .pricing-header {
@@ -1848,8 +1789,8 @@ body {
   }
   
   .pricing-title {
-    font-size: 1.375rem;
-    margin-bottom: 8px;
+    font-size: 24px;
+    line-height: 1.2;
   }
   
   .pricing-grid {
@@ -1858,7 +1799,17 @@ body {
   }
   
   .pricing-card {
-    padding: 16px 12px;
+    padding: 28px 24px;
+    min-height: 350px;
+    border-radius: 10px;
+  }
+  
+  .best-value-badge {
+    top: 20px;
+    right: 20px;
+    padding: 6px 12px;
+    font-size: 11px;
+    border-radius: 10px;
   }
   
   .pricing-card-header {
@@ -1866,32 +1817,111 @@ body {
   }
   
   .plan-name {
-    font-size: 1rem;
+    font-size: 16px;
+    margin-bottom: 6px;
   }
   
   .price-amount {
-    font-size: 1.5rem;
+    font-size: 36px;
   }
   
-  .feature-item span,
-  .feature-text {
+  .price-period {
+    font-size: 16px;
+  }
+  
+  .plan-features {
+    gap: 8px;
+    margin-top: 6px;
+  }
+  
+  .feature-item {
+    gap: 10px;
+  }
+  
+  .feature-text, .assignment-text, .feature-texts {
     font-size: 14px;
+    line-height: 1.4;
   }
   
   .feature-texts {
-    max-width: none;
-    top: 2px;
-    white-space: nowrap;
+    text-align: center;
+    margin-top: auto;
+    padding-top: 14px;
+    padding-bottom: 6px;
+    border-top: 1px solid #f3f4f6;
+    margin-left: -24px;
+    margin-right: -24px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  
+  .feature-icon {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .pricing-footer {
+    margin-top: 24px;
+  }
+  
+  .billing-info {
+    font-size: 12px;
+    margin-bottom: 20px;
   }
   
   .pricing-cta-button {
-    padding: 10px 20px;
-    font-size: 0.85rem;
+    padding: 12px 20px;
+    font-size: 14px;
+    border-radius: 10px;
+  }
+}
+
+/* Extra Small Mobile */
+@media screen and (max-width: 360px) {
+  .pricing-section {
+    padding: 32px 8px 40px;
   }
   
-  .pricing-cta-button img {
-    width: 12px;
-    height: 12px;
+  .pricing-title {
+    font-size: 22px;
+  }
+  
+  .pricing-card {
+    padding: 24px 20px;
+    min-height: 320px;
+  }
+  
+  .plan-name {
+    font-size: 13px;
+  }
+  
+  .price-amount {
+    font-size: 24px;
+  }
+  
+  .price-period {
+    font-size: 12px;
+  }
+  
+  .feature-text, .assignment-text, .feature-texts {
+    font-size: 11px;
+  }
+  
+  .feature-texts {
+    text-align: center;
+    margin-top: auto;
+    padding-top: 12px;
+    padding-bottom: 5px;
+    border-top: 1px solid #f3f4f6;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .feature-icon {
+    width: 14px;
+    height: 14px;
   }
 }
 
